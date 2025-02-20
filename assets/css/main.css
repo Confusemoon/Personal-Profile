@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/* CSS Reset 
+
+max-width: 1200px;
+
+*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: min(100% - 40px, 1080px);
+    margin-inline: auto;
+}
+
+/* ---------------------------*/
+/* Navigation                 */
+/* ---------------------------*/
+
+nav {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+
+
+/* ---------------------------*/
+/* Hero Banner                */
+/* ---------------------------*/
+
+#hero {
+    text-align: center;
+    background-color: aliceblue;
+}
+
+.hero-banner {
+        height: 400px;
+        background-image: url(../img/haodihua2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;    
+
+    .overlay {
+        height: 100%;
+        text-align: center;
+        place-content: center;        
+        backdrop-filter: brightness(50%);
+
+        P, h2 {
+            font-size: 4rem;
+            font-weight: 600;
+            color: white;
+        }
+        
+        p {
+            font-size: 2rem;
+        }
+    }
+}
+
+/* ---------------------------*/
+/* Section One                */
+/* ---------------------------*/
+
+section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ---------------------------*/
+/* Section Two                */
+/* ---------------------------*/
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.skill-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+/* ---------------------------*/
+/* Section Three              */
+/* ---------------------------*/
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-links a {
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.contact-links a:hover {
+    color: #007bff;
+}
+
+/* ---------------------------*/
+/* Responsive                 */
+/* ---------------------------*/
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .container {
+        padding: 0 1rem;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
